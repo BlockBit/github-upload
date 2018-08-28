@@ -1,0 +1,26 @@
+//
+//  Prefix.pch
+//  OcrDemo
+//
+//  Copyright © 1991-2017 LEAD Technologies, Inc. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import <Leadtools/Leadtools.h>
+#import <Leadtools.Codecs/Leadtools.Codecs.h>
+
+#import <Leadtools.Converters/Leadtools.Converters.h>
+#import <Leadtools.Controls/Leadtools.Controls.h>
+
+#import <Leadtools.ImageProcessing.Core/Leadtools.ImageProcessing.Core.h>
+#import <Leadtools.ImageProcessing.Color/Leadtools.ImageProcessing.Color.h>
+#import <Leadtools.ImageProcessing.Effects/Leadtools.ImageProcessing.Effects.h>
+
+#import <Leadtools.Svg/Leadtools.Svg.h>
+
+#import <Leadtools.Forms.DocumentWriters/Leadtools.Forms.DocumentWriters.h>
+#import <Leadtools.Forms.Ocr/Leadtools.Forms.Ocr.h>
+
+#import "UnlockSupport.h"
+#import "DemoUtilities.h"

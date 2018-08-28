@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolbarView" customModule="OcrDemo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SBc-fE-OSM" customClass="ToolbarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvU-08-M3F">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="SHO-Yb-xwY"/>
+                        <constraint firstAttribute="width" constant="30" id="oCG-UF-jP9"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ej-l3-Di5">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="bdI-mm-QVE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLP-Gc-oh5">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="3mA-gk-3iY"/>
+                        <constraint firstAttribute="height" constant="11" id="CPp-XE-mmn"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="3DDeskew"/>
+                    <state key="selected" image="3DDeskew-Selected"/>
+                    <state key="highlighted" image="3DDeskew-Selected"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="SBc-fE-OSM" eventType="touchUpInside" id="PBi-gS-pDg"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9y5-gJ-rMp">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1r-gh-4h4">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="LVe-gA-mos"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Invert"/>
+                    <state key="selected" image="Invert-Selected"/>
+                    <state key="highlighted" image="Invert-Selected"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="SBc-fE-OSM" eventType="touchUpInside" id="fnt-RB-6SC"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-ST-QiT">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq0-6G-6Nq">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Dqm-QP-P1Z"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Rotate"/>
+                    <state key="selected" image="Rotate-Selected"/>
+                    <state key="highlighted" image="Rotate-Selected"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="SBc-fE-OSM" eventType="touchUpInside" id="Eua-VP-kFs"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiC-Kj-h6g">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z1r-gh-4h4" firstAttribute="centerY" secondItem="SBc-fE-OSM" secondAttribute="centerY" id="4ta-Ji-UBl"/>
+                <constraint firstAttribute="trailing" secondItem="RiC-Kj-h6g" secondAttribute="trailing" id="82t-p7-GDz"/>
+                <constraint firstItem="wLP-Gc-oh5" firstAttribute="centerY" secondItem="SBc-fE-OSM" secondAttribute="centerY" id="94T-1K-5Qu"/>
+                <constraint firstItem="RiC-Kj-h6g" firstAttribute="bottom" secondItem="Aq0-6G-6Nq" secondAttribute="bottom" id="ENM-j4-ZQo"/>
+                <constraint firstItem="0ej-l3-Di5" firstAttribute="top" secondItem="wLP-Gc-oh5" secondAttribute="top" id="KAL-Ea-QZJ"/>
+                <constraint firstItem="Aq0-6G-6Nq" firstAttribute="trailing" secondItem="RiC-Kj-h6g" secondAttribute="leading" id="Lxg-2r-epO"/>
+                <constraint firstItem="RiC-Kj-h6g" firstAttribute="width" secondItem="0ej-l3-Di5" secondAttribute="width" id="Nz7-ce-s9N"/>
+                <constraint firstItem="0ej-l3-Di5" firstAttribute="bottom" secondItem="wLP-Gc-oh5" secondAttribute="bottom" id="PfQ-vO-97b"/>
+                <constraint firstItem="vhl-ST-QiT" firstAttribute="bottom" secondItem="z1r-gh-4h4" secondAttribute="bottom" id="QFU-zL-ZJe"/>
+                <constraint firstItem="vhl-ST-QiT" firstAttribute="top" secondItem="z1r-gh-4h4" secondAttribute="top" id="RzZ-2D-3Mg"/>
+                <constraint firstItem="Aq0-6G-6Nq" firstAttribute="height" secondItem="wLP-Gc-oh5" secondAttribute="height" id="STx-9u-W0m"/>
+                <constraint firstItem="wLP-Gc-oh5" firstAttribute="height" secondItem="z1r-gh-4h4" secondAttribute="height" id="WBH-IM-e5a"/>
+                <constraint firstItem="vhl-ST-QiT" firstAttribute="trailing" secondItem="Aq0-6G-6Nq" secondAttribute="leading" id="Yi3-Vh-qcl"/>
+                <constraint firstAttribute="bottom" secondItem="jvU-08-M3F" secondAttribute="bottom" id="a8q-kE-rJU"/>
+                <constraint firstItem="RiC-Kj-h6g" firstAttribute="top" secondItem="Aq0-6G-6Nq" secondAttribute="top" id="aWQ-YZ-MEo"/>
+                <constraint firstItem="9y5-gJ-rMp" firstAttribute="width" relation="greaterThanOrEqual" secondItem="0ej-l3-Di5" secondAttribute="width" id="c71-w2-A2c"/>
+                <constraint firstItem="wLP-Gc-oh5" firstAttribute="trailing" secondItem="9y5-gJ-rMp" secondAttribute="leading" id="dHl-M3-Md9"/>
+                <constraint firstItem="0ej-l3-Di5" firstAttribute="trailing" secondItem="wLP-Gc-oh5" secondAttribute="leading" id="eo7-8I-dpu"/>
+                <constraint firstItem="Aq0-6G-6Nq" firstAttribute="centerY" secondItem="SBc-fE-OSM" secondAttribute="centerY" id="f47-OL-MYZ"/>
+                <constraint firstItem="z1r-gh-4h4" firstAttribute="trailing" secondItem="vhl-ST-QiT" secondAttribute="leading" id="fr2-in-nyq"/>
+                <constraint firstItem="jvU-08-M3F" firstAttribute="leading" secondItem="wLP-Gc-oh5" secondAttribute="leading" id="gMj-HE-w6f"/>
+                <constraint firstItem="vhl-ST-QiT" firstAttribute="width" secondItem="9y5-gJ-rMp" secondAttribute="width" id="kXt-EC-92c"/>
+                <constraint firstItem="0ej-l3-Di5" firstAttribute="leading" secondItem="SBc-fE-OSM" secondAttribute="leading" id="sE5-Dl-z4N"/>
+                <constraint firstItem="wLP-Gc-oh5" firstAttribute="top" secondItem="9y5-gJ-rMp" secondAttribute="top" id="t90-jT-xbd"/>
+                <constraint firstItem="9y5-gJ-rMp" firstAttribute="trailing" secondItem="z1r-gh-4h4" secondAttribute="leading" id="yhq-dh-p3i"/>
+                <constraint firstItem="wLP-Gc-oh5" firstAttribute="bottom" secondItem="9y5-gJ-rMp" secondAttribute="bottom" id="zxb-o4-jby"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deskewButton" destination="wLP-Gc-oh5" id="vAy-Sy-vzt"/>
+                <outlet property="deskewSelectionBar" destination="jvU-08-M3F" id="saK-VM-ykp"/>
+                <outlet property="invertButton" destination="z1r-gh-4h4" id="EOs-Ut-7hw"/>
+                <outlet property="leadingConstraint" destination="bdI-mm-QVE" id="bmF-3U-5Q5"/>
+                <outlet property="rotateButton" destination="Aq0-6G-6Nq" id="JcZ-1L-9yq"/>
+                <outlet property="widthsConstraint" destination="c71-w2-A2c" id="Jyr-Ev-HNY"/>
+            </connections>
+            <point key="canvasLocation" x="-1055" y="432"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="3DDeskew" width="301" height="36"/>
+        <image name="3DDeskew-Selected" width="301" height="36"/>
+        <image name="Invert" width="183" height="36"/>
+        <image name="Invert-Selected" width="183" height="36"/>
+        <image name="Rotate" width="193" height="36"/>
+        <image name="Rotate-Selected" width="193" height="36"/>
+    </resources>
+</document>
